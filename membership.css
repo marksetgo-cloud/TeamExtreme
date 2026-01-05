@@ -1,0 +1,303 @@
+/* ============================================
+   Membership Page Styles
+   ============================================ */
+
+.membership-hero {
+    margin-top: 80px;
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--phantom) 100%);
+    color: var(--white);
+}
+
+.membership-hero h1 {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.membership-hero .hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.membership-intro {
+    padding: var(--spacing-xl) 0;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-content h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.intro-content p {
+    color: var(--graphite);
+    line-height: 1.8;
+}
+
+/* Requirements Section */
+.membership-requirements {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--cloud);
+}
+
+.membership-requirements h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--graphite);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.requirement-card {
+    background-color: var(--white);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border-left: 4px solid var(--navy);
+}
+
+.requirement-number {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--navy);
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.requirement-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.requirement-card p {
+    color: var(--graphite);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Application Process */
+.application-process {
+    padding: var(--spacing-xl) 0;
+}
+
+.application-process h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.process-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.process-content .lead {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.process-steps {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+.process-step {
+    padding: var(--spacing-md);
+    background-color: var(--white);
+    border: 2px solid var(--cloud);
+    border-radius: 8px;
+    transition: border-color var(--transition-fast);
+}
+
+.process-step:hover {
+    border-color: var(--navy);
+}
+
+.step-number {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--navy);
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-sm);
+}
+
+.process-step h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.process-step p {
+    color: var(--graphite);
+    line-height: 1.7;
+}
+
+.step-note {
+    margin-top: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background-color: var(--cloud);
+    border-left: 3px solid var(--navy);
+    font-size: 0.9375rem;
+    font-style: italic;
+}
+
+/* Status Section */
+.membership-status {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--cloud);
+}
+
+.status-box {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(26, 41, 63, 0.08);
+}
+
+.status-box h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.status-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
+    border-top: 1px solid var(--cloud);
+    border-bottom: 1px solid var(--cloud);
+}
+
+.status-metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--space);
+    margin-bottom: var(--spacing-xs);
+}
+
+.metric-value {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1;
+}
+
+.status-note {
+    color: var(--graphite);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Testimonials */
+.membership-testimonials {
+    padding: var(--spacing-xl) 0;
+}
+
+.membership-testimonials h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.testimonial {
+    background-color: var(--cloud);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    position: relative;
+}
+
+.testimonial::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: var(--spacing-md);
+    font-size: 4rem;
+    color: var(--navy);
+    opacity: 0.2;
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.testimonial p {
+    color: var(--navy);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial cite {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--space);
+    font-style: normal;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .membership-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .status-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .membership-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .metric-value {
+        font-size: 2.5rem;
+    }
+}

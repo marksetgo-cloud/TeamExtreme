@@ -1,0 +1,195 @@
+/* ============================================
+   Gallery/Annual Editions Styles
+   ============================================ */
+
+.gallery-header {
+    margin-top: 80px;
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--phantom) 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.edition-label {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.gallery-header h1 {
+    font-size: 4.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.edition-subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    opacity: 0.9;
+    margin-bottom: var(--spacing-lg);
+}
+
+.edition-details {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detail-item {
+    font-size: 0.9375rem;
+    opacity: 0.9;
+}
+
+.detail-item strong {
+    font-weight: 600;
+}
+
+/* Edition Story */
+.edition-story {
+    padding: var(--spacing-xl) 0;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-content h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.story-content p {
+    color: var(--graphite);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--cloud);
+}
+
+.photo-gallery h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.gallery-item {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(26, 41, 63, 0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    background-color: var(--smoke);
+}
+
+.photo-caption {
+    padding: var(--spacing-md);
+    font-size: 0.9375rem;
+    color: var(--graphite);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Trip Highlights */
+.trip-highlights-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.trip-highlights-section h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.highlight-card {
+    background-color: var(--cloud);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border-left: 4px solid var(--navy);
+}
+
+.highlight-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.highlight-card p {
+    color: var(--graphite);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Lightbox for photos (optional enhancement) */
+.gallery-item {
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .gallery-header h1 {
+        font-size: 3.5rem;
+    }
+    
+    .edition-details {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .gallery-item img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 640px) {
+    .gallery-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .edition-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
